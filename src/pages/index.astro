@@ -1,5 +1,18 @@
 ---
-
+const title = 'Goedkope website in Gistel | Bits by Tommy';
+const description = 'Een betaalbare of goedkope website laten maken in Gistel en omgeving? Bits by Tommy bouwt persoonlijke websites op maat die echt van jou zijn.';
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const structuredData = {
+	'@context': 'https://schema.org',
+	'@type': 'ProfessionalService',
+	name: 'Bits by Tommy',
+	url: canonicalURL.href,
+	description,
+	areaServed: { '@type': 'City', name: 'Gistel' },
+	founder: { '@type': 'Person', name: 'Tommy' },
+	knowsLanguage: ['nl', 'fr', 'en'],
+	serviceType: 'Webdesign',
+};
 ---
 
 <html lang="nl-BE">
@@ -9,8 +22,20 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content="Creatief en betaalbaar webdesign uit Gistel, gebouwd rond jouw verhaal en ideeën." />
-		<title>Bits by Tommy | Webdesign op maat</title>
+		<meta name="robots" content="index, follow, max-image-preview:large" />
+		<link rel="canonical" href={canonicalURL} />
+		<meta name="description" content={description} />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="nl_BE" />
+		<meta property="og:site_name" content="Bits by Tommy" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonicalURL} />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+		<title>{title}</title>
 	</head>
 	<body id=top>
 		<header><a href=/>bits <small>BY TOMMY</small></a><a href=#contact>Vertel me wat je nodig hebt</a></header>
@@ -46,7 +71,7 @@
 				</article>
 				<article class=service-panel>
 					<div class=panel-top><span>03 / WAARDE</span><span>EERLIJK BUDGET</span></div>
-					<div><h3>Betaalbaar met karakter.</h3><p>Geen zware structuur of onnodige kosten. Je betaalt voor doordacht ontwerp en degelijk werk, niet voor de naam van een groot bureau.</p></div>
+					<div><h3>Betaalbaar met karakter.</h3><p>Een goedkope website hoeft niet goedkoop aan te voelen. Je betaalt voor doordacht ontwerp en degelijk werk, niet voor de naam van een groot bureau.</p></div>
 					<strong>Een originele website zonder een onbegrijpelijke factuur.</strong>
 				</article>
 			</div>
@@ -109,7 +134,7 @@
 			</div>
 		</section>
 	</main>
-		<footer id=contact><div><small>WEBDESIGN TOT IN DE BITJES</small><p>Heb je iets in gedachten?</p></div><span>Vertel me wat je nodig hebt. Dan bekijken we het samen.</span></footer>
+		<footer id=contact><div><small>WEBDESIGN IN GISTEL & OMGEVING</small><p>Heb je iets in gedachten?</p></div><span>Vertel me wat je nodig hebt. Dan bekijken we het samen.</span></footer>
 		<a class=to-top href=#top aria-label='Terug naar boven'>↑</a>
 	</body>
 </html>
