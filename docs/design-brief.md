@@ -64,10 +64,11 @@ Use a typographic wordmark with `bits` in confident lowercase and `BY TOMMY` as 
 ## Homepage structure
 
 1. Hero
-2. Connected services
-3. Approach and process
-4. About Tommy
-5. Service area and languages
-6. Contact
+2. Brand principles
+3. Portfolio
+4. Approach and process
+5. Ownership and editing
+6. About Tommy
+7. Contact
 
 Dutch is the primary language and should read as natural Flemish Dutch. Avoid em dashes and conspicuous hyphenation in public copy. The primary call to action should feel conversational, such as “Vertel me wat je nodig hebt,” rather than immediately demanding a quote request.

@@ -12,8 +12,15 @@
 		<meta name="description" content="Creatief en betaalbaar webdesign uit Gistel, gebouwd rond jouw verhaal en ideeën." />
 		<title>Bits by Tommy | Webdesign op maat</title>
 	</head>
-	<body>
+	<body id=top>
 		<header><a href=/>bits <small>BY TOMMY</small></a><a href=#contact>Vertel me wat je nodig hebt</a></header>
+		<nav class=side-nav aria-label=Hoofdnavigatie>
+			<a href=#services><b>Visie</b><i aria-hidden=true></i><span>01</span></a>
+			<a href=#portfolio><b>Portfolio</b><i aria-hidden=true></i><span>02</span></a>
+			<a href=#approach><b>Werkwijze</b><i aria-hidden=true></i><span>03</span></a>
+			<a href=#about><b>Over mij</b><i aria-hidden=true></i><span>04</span></a>
+			<a href=#contact><b>Contact</b><i aria-hidden=true></i><span>05</span></a>
+		</nav>
 		<main><section>
 			<p class=eyebrow>Webdesign uit Gistel</p>
 			<h1>Jouw idee. Mijn bits. <em>Een website die klopt.</em></h1>
@@ -43,6 +50,23 @@
 					<strong>Een originele website zonder een onbegrijpelijke factuur.</strong>
 				</article>
 			</div>
+		</section>
+		<section class=portfolio id=portfolio aria-labelledby=portfolio-title>
+			<div class=portfolio-heading>
+				<p class=eyebrow>Portfolio</p>
+				<h2 id=portfolio-title>Eén project. Wel helemaal echt.</h2>
+				<p>Mijn portfolio groeit mee met Bits by Tommy. Dit is waar het vandaag begint.</p>
+			</div>
+			<a class=project-card href=https://maramusic.be/ target=_blank rel=noreferrer>
+				<div class=project-visual aria-hidden=true>
+					<span class=project-window>maramusic.be</span>
+					<img src=/mara-portfolio.png alt='' loading=lazy />
+				</div>
+				<div class=project-info>
+					<div><span>01 / MUZIEK</span><h3>Maramusic.be</h3><p>Een meertalige artiestenwebsite</p></div>
+					<strong>Bekijk de website ↗</strong>
+				</div>
+			</a>
 		</section>
 		<section class=approach id=approach aria-labelledby=approach-title>
 			<div class=approach-copy>
@@ -86,6 +110,7 @@
 		</section>
 	</main>
 		<footer id=contact><div><small>WEBDESIGN TOT IN DE BITJES</small><p>Heb je iets in gedachten?</p></div><span>Vertel me wat je nodig hebt. Dan bekijken we het samen.</span></footer>
+		<a class=to-top href=#top aria-label='Terug naar boven'>↑</a>
 	</body>
 </html>
 
@@ -101,6 +126,16 @@
 	header a:first-child { font-size: 1.65rem; font-weight: 600; letter-spacing: -.08em; text-decoration: none; }
 	header small, .eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: .68rem; letter-spacing: .14em; }
 	header small { margin-left: .75rem; color: #9ba1a8; }
+	.side-nav { position: fixed; z-index: 20; top: 50%; right: 1.25rem; display: flex; flex-direction: column; gap: .2rem; align-items: flex-end; transform: translateY(-50%); }
+	.side-nav a { display: flex; gap: .65rem; align-items: center; padding: .38rem 0; color: #777d84; font-size: .7rem; text-decoration: none; text-shadow: 0 1px 8px #0b0d0f; transition: color 160ms ease, transform 160ms ease; }
+	.side-nav b { font-weight: 400; transform: scaleX(-1); transition: transform 260ms cubic-bezier(.2,.8,.2,1), color 160ms ease; }
+	.side-nav i { width: .8rem; height: 1px; background: currentColor; transition: width 160ms ease; }
+	.side-nav a:hover { color: #f2f0ea; transform: translateX(-.2rem); }
+	.side-nav a:hover b, .side-nav a:focus-visible b { transform: scaleX(1); }
+	.side-nav a:hover i { width: 1.5rem; color: #c7f04b; }
+	.side-nav span { color: #c7f04b; font: 500 .58rem 'IBM Plex Mono', monospace; }
+	.to-top { position: fixed; z-index: 20; right: 1rem; bottom: 1rem; display: grid; width: 2.8rem; height: 2.8rem; place-items: center; border: 1px solid rgb(242 240 234 / 14%); background: #15181c; color: #f2f0ea; text-decoration: none; transition: transform 160ms ease, background 160ms ease; }
+	.to-top:hover { background: #6657c8; transform: translateY(-3px); }
 	main { max-width: 90rem; margin: 0 auto; }
 	section { display: grid; align-content: center; min-height: calc(100svh - 6rem); padding: clamp(5rem, 12vh, 9rem) clamp(1.5rem, 8vw, 8rem); }
 	.eyebrow { margin: 0 0 2rem; color: #9ba1a8; text-transform: uppercase; }
@@ -145,6 +180,18 @@
 		.service-panel { min-height: 31rem; }
 		.service-panel + .service-panel { margin-top: 38vh; }
 	}
+	.portfolio { grid-template-columns: minmax(16rem, .55fr) minmax(25rem, 1.45fr); gap: clamp(3rem, 7vw, 7rem); min-height: auto; border-top: 1px solid rgb(242 240 234 / 10%); }
+	.portfolio-heading h2 { max-width: 11ch; margin: 0; font-size: clamp(2.4rem, 4.5vw, 4.5rem); font-weight: 500; letter-spacing: -.055em; line-height: 1; }
+	.portfolio-heading > p:last-child { max-width: 25rem; margin: 1.75rem 0 0; color: #9ba1a8; line-height: 1.7; }
+	.project-card { display: grid; color: inherit; text-decoration: none; }
+	.project-visual { position: relative; display: grid; min-height: clamp(22rem, 45vw, 37rem); place-items: center; overflow: hidden; border: 1px solid rgb(242 240 234 / 13%); background: #15181c; }
+	.project-window { position: absolute; z-index: 2; top: 1rem; left: 1rem; padding: .45rem .6rem; background: rgb(11 13 15 / 78%); color: #f2f0ea; font: 500 .62rem 'IBM Plex Mono', monospace; letter-spacing: .1em; }
+	.project-visual img { width: 100%; height: 100%; min-height: inherit; object-fit: cover; transition: transform 700ms cubic-bezier(.2,.8,.2,1), filter 700ms ease; }
+	.project-card:hover .project-visual img { filter: brightness(1.08); transform: scale(1.025); }
+	.project-info { display: flex; justify-content: space-between; gap: 2rem; padding: 1.5rem 0; border-bottom: 1px solid rgb(242 240 234 / 13%); }
+	.project-info span { color: #c7f04b; font: 500 .62rem 'IBM Plex Mono', monospace; letter-spacing: .1em; }
+	.project-info h3 { margin: .6rem 0 .4rem; font-size: 1.35rem; font-weight: 500; }
+	.project-info p, .project-info > strong { margin: 0; color: #9ba1a8; font-size: .85rem; font-weight: 500; line-height: 1.5; }
 	.approach { grid-template-columns: minmax(18rem, 1fr) minmax(22rem, 1fr); gap: clamp(4rem, 10vw, 10rem); min-height: auto; overflow: hidden; position: relative; }
 	.approach::before { position: absolute; top: 0; bottom: 0; left: 50%; width: 1px; background: linear-gradient(transparent, rgb(199 240 75 / 42%), transparent); content: ''; }
 	.approach-copy { align-self: center; }
@@ -157,6 +204,7 @@
 	.process h3 { margin: 0 0 .65rem; font-size: 1.15rem; font-weight: 500; }
 	.process p { max-width: 32rem; margin: 0; color: #9ba1a8; line-height: 1.6; }
 	@media (max-width: 52rem) {
+		.portfolio { grid-template-columns: 1fr; }
 		.approach { grid-template-columns: 1fr; }
 		.approach::before { display: none; }
 	}
@@ -188,6 +236,21 @@
 	}
 	@media (prefers-reduced-motion: reduce) {
 		.service-panel { transform: none; will-change: auto; }
+		.project-visual img, .to-top { transition: none; }
+		.side-nav b { transition: none; }
+	}
+	@media (max-width: 70rem) {
+		.side-nav { top: auto; right: 50%; bottom: 1rem; flex-direction: row; width: max-content; max-width: calc(100vw - 2rem); transform: translateX(50%); }
+		.side-nav a { padding: .55rem clamp(.45rem, 2vw, .7rem); }
+		.side-nav i { display: none; }
+		.side-nav span { display: none; }
+		.side-nav a.is-active { color: #f2f0ea; }
+		.side-nav a.is-active b { transform: scaleX(1); }
+		.to-top { bottom: 4.8rem; }
+	}
+	@media (max-width: 30rem) {
+		.project-info { align-items: flex-start; flex-direction: column; }
+		.side-nav a { font-size: .66rem; }
 	}
 </style>
 
@@ -212,4 +275,22 @@
 	addEventListener('scroll', () => { if (!ticking) { requestAnimationFrame(updatePanels); ticking = true; } }, { passive: true });
 	addEventListener('resize', updatePanels);
 	updatePanels();
+
+	const navLinks = Array.from(document.querySelectorAll('.side-nav a'));
+	const activateNavLink = (id: string) => {
+		navLinks.forEach((link) => {
+			const active = link.getAttribute('href') === '#' + id;
+			link.classList.toggle('is-active', active);
+			if (active) link.setAttribute('aria-current', 'location');
+			else link.removeAttribute('aria-current');
+		});
+	};
+
+	const sectionObserver = new IntersectionObserver((entries) => {
+		const visible = entries.find((entry) => entry.isIntersecting);
+		if (visible) activateNavLink(visible.target.id);
+	}, { rootMargin: '-35% 0px -55% 0px', threshold: 0 });
+
+	document.querySelectorAll('#services, #portfolio, #approach, #about, #contact').forEach((section) => sectionObserver.observe(section));
+	activateNavLink('services');
 </script>
