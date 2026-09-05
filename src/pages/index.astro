@@ -9,9 +9,139 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Bits by Tommy — Tech, tailored.</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<header><a href=/>bits <small>BY TOMMY</small></a><a href=#contact>Start a conversation</a></header>
+		<main><section>
+			<p class=eyebrow>Personal technology · Gistel</p>
+			<h1>Technology should fit <em>your</em> life.</h1>
+			<p class=intro>Websites, custom computers, better Wi-Fi, and patient digital guidance—explained clearly and tailored to what you actually need.</p>
+			<a class=button href=#contact>Tell me what you need ↗</a>
+			<p class=languages>In Dutch, French, or English.</p>
+		</section>
+		<section class=services id=services aria-labelledby=services-title>
+			<div class=section-heading>
+				<p class=eyebrow>What I can help with</p>
+				<h2 id=services-title>Four ways to make technology work better.</h2>
+			</div>
+			<ol class=service-list>
+				<li><span>01</span><h3>Websites</h3><p>Clear, purposeful sites for individuals and small businesses.</p></li>
+				<li><span>02</span><h3>Custom PCs</h3><p>Gaming and professional systems built around how you use them.</p></li>
+				<li><span>03</span><h3>Wi-Fi & networks</h3><p>Reliable connections, thoughtfully set up for your space.</p></li>
+				<li><span>04</span><h3>Digital guidance</h3><p>Patient, fixed-length sessions that move at your pace.</p></li>
+			</ol>
+		</section>
+		<section class=approach id=approach aria-labelledby=approach-title>
+			<div class=approach-copy>
+				<p class=eyebrow>A clear way forward</p>
+				<h2 id=approach-title>Good technology starts with listening.</h2>
+				<p>No jargon, no unnecessary extras. We begin with what you want to achieve, then find the right-sized solution together.</p>
+			</div>
+			<ol class=process>
+				<li><span>01</span><div><h3>Tell me what you need</h3><p>A straightforward conversation about your goal, your setup, and what matters most.</p></div></li>
+				<li><span>02</span><div><h3>Get a tailored plan</h3><p>Clear advice, an agreed scope, and no mystery around time, travel, or cost.</p></div></li>
+				<li><span>03</span><div><h3>Move forward confidently</h3><p>A thoughtful result, explained in plain language so it keeps working for you.</p></div></li>
+			</ol>
+		</section>
+		<section class=about id=about aria-labelledby=about-title>
+			<div class=about-marker aria-hidden=true>
+				<span>11</span>
+				<small>YEARS OLD<br />WHERE IT STARTED</small>
+			</div>
+			<div class=about-copy>
+				<p class=eyebrow>About Tommy</p>
+				<h2 id=about-title>Curious about technology. Serious about helping people.</h2>
+				<p>Technology has never been just a job for me. At eleven, I was already installing Windows 98, building computers, and experimenting with my first websites.</p>
+				<p>That curiosity grew into almost thirty years of hands-on experience, including more than fourteen years working professionally in telecom and technical service.</p>
+				<p class=about-signoff>The part I still enjoy most? Making technology feel simple, useful, and genuinely yours.</p>
+			</div>
+		</section>
+	</main>
+		<footer id=contact><p>Have something in mind?</p><span>Let’s find the right approach together.</span></footer>
 	</body>
 </html>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Manrope:wght@400;500;600&display=swap');
+	:root { color-scheme: dark; font-family: 'Manrope', sans-serif; background: #0b0d0f; color: #f2f0ea; }
+	* { box-sizing: border-box; }
+	html { scroll-behavior: smooth; }
+	body { margin: 0; min-width: 320px; background: radial-gradient(circle at 78% 22%, rgb(143 41 66 / 12%), transparent 28rem), #0b0d0f; }
+	a { color: inherit; }
+	header { display: flex; align-items: center; justify-content: space-between; max-width: 90rem; margin: 0 auto; padding: 1.75rem clamp(1.5rem, 5vw, 5rem); border-bottom: 1px solid rgb(242 240 234 / 10%); }
+	header a { font-size: .85rem; text-underline-offset: .35rem; }
+	header a:first-child { font-size: 1.65rem; font-weight: 600; letter-spacing: -.08em; text-decoration: none; }
+	header small, .eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: .68rem; letter-spacing: .14em; }
+	header small { margin-left: .75rem; color: #9ba1a8; }
+	main { max-width: 90rem; margin: 0 auto; }
+	section { display: grid; align-content: center; min-height: calc(100svh - 6rem); padding: clamp(5rem, 12vh, 9rem) clamp(1.5rem, 8vw, 8rem); }
+	.eyebrow { margin: 0 0 2rem; color: #9ba1a8; text-transform: uppercase; }
+	.eyebrow::before { display: inline-block; width: .45rem; height: .45rem; margin-right: .75rem; background: #b83a59; content: ''; }
+	h1 { max-width: 12ch; margin: 0; font-size: clamp(3.25rem, 8vw, 7.5rem); font-weight: 500; letter-spacing: -.065em; line-height: .94; }
+	h1 em { color: #b83a59; font-style: normal; }
+	.intro { max-width: 39rem; margin: 2.5rem 0; color: #b9bdc1; font-size: clamp(1.05rem, 1.6vw, 1.3rem); line-height: 1.7; }
+	.button { justify-self: start; padding: 1rem 1.25rem; background: #8f2942; font-size: .9rem; font-weight: 600; text-decoration: none; transition: background 180ms ease, transform 180ms ease; }
+	.button:hover { background: #b83a59; transform: translateY(-2px); }
+	.languages { margin: 1.25rem 0 0; color: #777d84; font-size: .8rem; }
+	footer { display: flex; justify-content: space-between; padding: 2rem clamp(1.5rem, 5vw, 5rem); border-top: 1px solid rgb(242 240 234 / 10%); background: #15181c; }
+	footer p { margin: 0; color: #9ba1a8; }
+	footer a { text-underline-offset: .3rem; }
+	:focus-visible { outline: 2px solid #f2f0ea; outline-offset: 4px; }
+	@media (max-width: 40rem) {
+		header > a:last-child { display: none; }
+		footer { align-items: flex-start; flex-direction: column; gap: 1rem; }
+	}
+	@media (prefers-reduced-motion: reduce) {
+		html { scroll-behavior: auto; }
+		.button { transition: none; }
+	}
+	.services { grid-template-columns: minmax(16rem, .75fr) minmax(22rem, 1.25fr); gap: clamp(3rem, 8vw, 8rem); min-height: auto; border-top: 1px solid rgb(242 240 234 / 10%); background: #111316; }
+	.section-heading { align-self: start; position: sticky; top: 3rem; }
+	.section-heading h2 { max-width: 12ch; margin: 0; font-size: clamp(2rem, 4vw, 3.75rem); font-weight: 500; letter-spacing: -.045em; line-height: 1.08; }
+	.service-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid rgb(242 240 234 / 16%); }
+	.service-list li { display: grid; grid-template-columns: 2rem minmax(9rem, .7fr) 1fr; gap: 1.5rem; align-items: baseline; padding: 1.75rem 0; border-bottom: 1px solid rgb(242 240 234 / 16%); }
+	.service-list span { color: #b83a59; font: 500 .68rem 'IBM Plex Mono', monospace; }
+	.service-list h3 { margin: 0; font-size: 1.1rem; font-weight: 500; }
+	.service-list p { margin: 0; color: #9ba1a8; line-height: 1.6; }
+	@media (max-width: 52rem) {
+		.services { grid-template-columns: 1fr; }
+		.section-heading { position: static; }
+		.service-list li { grid-template-columns: 2rem 1fr; }
+		.service-list p { grid-column: 2; }
+	}
+	@media (max-width: 30rem) {
+		.service-list li { grid-template-columns: 1fr; gap: .6rem; }
+		.service-list p { grid-column: 1; }
+	}
+	.approach { grid-template-columns: minmax(18rem, 1fr) minmax(22rem, 1fr); gap: clamp(4rem, 10vw, 10rem); min-height: auto; overflow: hidden; position: relative; }
+	.approach::before { position: absolute; top: 0; bottom: 0; left: 50%; width: 1px; background: linear-gradient(transparent, rgb(184 58 89 / 45%), transparent); content: ''; }
+	.approach-copy { align-self: center; }
+	.approach-copy h2 { max-width: 12ch; margin: 0; font-size: clamp(2.25rem, 4.5vw, 4.5rem); font-weight: 500; letter-spacing: -.05em; line-height: 1.05; }
+	.approach-copy > p:last-child { max-width: 34rem; margin: 2rem 0 0; color: #9ba1a8; line-height: 1.7; }
+	.process { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; }
+	.process li { display: grid; grid-template-columns: 2.5rem 1fr; gap: 1.25rem; padding: 2rem 0; border-bottom: 1px solid rgb(242 240 234 / 13%); }
+	.process li:first-child { border-top: 1px solid rgb(242 240 234 / 13%); }
+	.process span { padding-top: .3rem; color: #b83a59; font: 500 .68rem 'IBM Plex Mono', monospace; }
+	.process h3 { margin: 0 0 .65rem; font-size: 1.15rem; font-weight: 500; }
+	.process p { max-width: 32rem; margin: 0; color: #9ba1a8; line-height: 1.6; }
+	@media (max-width: 52rem) {
+		.approach { grid-template-columns: 1fr; }
+		.approach::before { display: none; }
+	}
+	.about { grid-template-columns: minmax(15rem, .8fr) minmax(22rem, 1.2fr); gap: clamp(4rem, 10vw, 10rem); min-height: auto; border-top: 1px solid rgb(242 240 234 / 10%); background: #15181c; }
+	.about-marker { align-self: center; display: grid; grid-template-columns: auto 1fr; gap: 1.25rem; align-items: end; }
+	.about-marker > span { color: #b83a59; font-size: clamp(7rem, 17vw, 14rem); font-weight: 500; letter-spacing: -.1em; line-height: .72; }
+	.about-marker small { padding-bottom: .15rem; color: #9ba1a8; font: 500 .65rem/1.6 'IBM Plex Mono', monospace; letter-spacing: .12em; }
+	.about-copy h2 { max-width: 14ch; margin: 0 0 2rem; font-size: clamp(2.25rem, 4vw, 4rem); font-weight: 500; letter-spacing: -.05em; line-height: 1.08; }
+	.about-copy > p:not(.eyebrow) { max-width: 40rem; margin: 0 0 1.25rem; color: #b9bdc1; font-size: 1.05rem; line-height: 1.75; }
+	.about-copy .about-signoff { margin-top: 2rem; padding-left: 1.25rem; border-left: 2px solid #8f2942; color: #f2f0ea; }
+	@media (max-width: 52rem) {
+		.about { grid-template-columns: 1fr; }
+		.about-marker { justify-self: start; }
+	}
+	@media (max-width: 30rem) {
+		.about-marker { grid-template-columns: 1fr; }
+		.about-marker small { padding-top: .5rem; }
+	}
+</style>
