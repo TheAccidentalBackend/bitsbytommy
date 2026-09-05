@@ -2,7 +2,7 @@
 
 ## Positioning
 
-Bits by Tommy is a personal technology service based in Gistel. It should feel like getting help from the trusted technology person in the family, backed by professional experience and clear boundaries.
+Bits by Tommy is an independent web design service based in Gistel. It creates affordable, distinctive websites through close customer collaboration. Sites can start small and gain new pages or features later as paid extensions.
 
 ## Brand foundation
 
@@ -18,14 +18,14 @@ Bits by Tommy is a personal technology service based in Gistel. It should feel l
 
 ## Services
 
-1. Websites for individuals and small businesses
-2. Custom gaming and professional PCs
-3. Wi-Fi and network setup
-4. Patient personal digital guidance, particularly for seniors
+1. Focused websites for individuals, associations, creative projects, and small businesses
+2. Later structural extensions such as pages or features, scoped and priced separately
 
-Computer repair, data recovery, and open-ended technical support are intentionally outside the offer.
+The offer is deliberately limited to web design. Computer building, repair, data recovery, Wi-Fi and network setup, and personal digital guidance are outside its scope.
 
-Digital guidance is provided in fixed-length appointments within the local service area. Travel and extra time are agreed and billed clearly beforehand. Children may purchase sessions for parents or grandparents.
+Customers buy and own their website rather than renting it. There is no compulsory maintenance subscription. They pay their domain renewal directly and may choose optional paid services. Existing text, images, prices, menus, and similar content should be easy for them to edit within a controlled interface. Structural changes such as new pages, links, or features return to Tommy as separately scoped and priced work.
+
+The controlled editing system is being developed and tested in a separate customer project and should not be implemented in this repository. Do not advertise complete webshops yet.
 
 ## Personality and voice
 
@@ -37,7 +37,9 @@ Digital guidance is provided in fixed-length appointments within the local servi
 
 ## Founder story
 
-Tommy has been working with computers since age eleven, beginning with Windows 98 installations, PC building, and early websites. This represents almost thirty years of personal technology experience and more than fourteen years of professional telecom and technical service experience.
+Tommy has been interested in computers since age eleven, beginning with Windows 98 installations, PC building, and early experiments with websites. He built websites around twenty years ago and occasionally returned to them in recent years, but only picked up web design seriously again this year. Almost thirty years refers to his broader personal history with technology, not continuous web design experience. He also has more than fourteen years of professional telecom and technical service experience.
+
+Tommy lives in Gistel, is a partner and father, works full time as a telecom service engineer, and enjoys gaming. These details may be used sparingly to make the About section warmer. Do not publish his employer's name or suggest that telecom services are part of the business.
 
 ## Visual direction
 
@@ -47,12 +49,13 @@ The visual theme is quiet performance: refined technology with the restraint and
 - Raised graphite: `#15181C`
 - Warm white: `#F2F0EA`
 - Titanium grey: `#9BA1A8`
-- Wine red: `#8F2942`
-- Interactive wine highlight: `#B83A59`
+- Acid lime: `#C7F04B`
+- Interactive lime highlight: `#D8FF66`
+- Deep ultraviolet detail: `#6657C8`
 - Primary typeface direction: Manrope
 - Technical-label typeface direction: IBM Plex Mono
 
-Use large clean surfaces, precise lines, restrained layering, and smooth motion. Avoid generic service-card layouts, stock-photo-heavy presentation, cyberpunk styling, code rain, excessive neon, and decorative clutter.
+Use large clean surfaces, precise lines, restrained layering, and smooth motion. Panels may shift, overlap, and settle into place during scrolling to make the page feel spatial and dynamic. Motion should communicate structure rather than decorate it, and must respect reduced-motion preferences. Avoid generic service-card layouts, stock-photo-heavy presentation, cyberpunk styling, code rain, excessive neon, and decorative clutter.
 
 ## Identity direction
 
@@ -67,4 +70,4 @@ Use a typographic wordmark with `bits` in confident lowercase and `BY TOMMY` as 
 5. Service area and languages
 6. Contact
 
-The primary call to action should feel conversational, such as “Tell me what you need,” rather than immediately demanding a quote request.
+Dutch is the primary language and should read as natural Flemish Dutch. Avoid em dashes and conspicuous hyphenation in public copy. The primary call to action should feel conversational, such as “Vertel me wat je nodig hebt,” rather than immediately demanding a quote request.

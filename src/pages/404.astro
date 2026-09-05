@@ -1,0 +1,36 @@
+<html lang=nl-BE>
+	<head>
+		<meta charset=utf-8 />
+		<meta name=viewport content='width=device-width, initial-scale=1' />
+		<meta name=robots content=noindex />
+		<title>Pagina niet gevonden | Bits by Tommy</title>
+	</head>
+	<body>
+		<main>
+			<a class=wordmark href=/>bits <small>BY TOMMY</small></a>
+			<div class=loose-bit aria-hidden=true></div>
+			<p class=code>FOUT 404</p>
+			<h1>Oei, hier ligt een <em>bitje los.</em></h1>
+			<p>Deze pagina bestaat niet of is ergens onderweg verloren geraakt.</p>
+			<a class=button href=/>Terug naar de website ↖</a>
+		</main>
+	</body>
+</html>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Manrope:wght@400;500;600&display=swap');
+	:root { color-scheme: dark; font-family: 'Manrope', sans-serif; background: #0b0d0f; color: #f2f0ea; }
+	* { box-sizing: border-box; }
+	body { margin: 0; }
+	main { position: relative; display: grid; align-content: center; min-height: 100svh; padding: clamp(2rem, 8vw, 8rem); overflow: hidden; }
+	.wordmark { position: absolute; top: 2rem; left: clamp(2rem, 8vw, 8rem); color: inherit; font-size: 1.65rem; font-weight: 600; letter-spacing: -.08em; text-decoration: none; }
+	.wordmark small, .code { font: 500 .65rem 'IBM Plex Mono', monospace; letter-spacing: .13em; }
+	.wordmark small { margin-left: .7rem; color: #9ba1a8; }
+	.code { margin: 0 0 1.5rem; color: #9ba1a8; }
+	h1 { max-width: 10ch; margin: 0; font-size: clamp(3.5rem, 9vw, 8rem); font-weight: 500; letter-spacing: -.065em; line-height: .95; }
+	h1 em { color: #c7f04b; font-style: normal; }
+	main > p:not(.code) { max-width: 32rem; margin: 2rem 0; color: #9ba1a8; font-size: 1.05rem; line-height: 1.7; }
+	.button { justify-self: start; padding: 1rem 1.25rem; background: #c7f04b; color: #0b0d0f; font-weight: 600; text-decoration: none; }
+	.loose-bit { position: absolute; right: 14vw; top: 20vh; width: clamp(5rem, 10vw, 9rem); aspect-ratio: 1; border: 1px solid #6657c8; transform: rotate(19deg); }
+	.loose-bit::after { position: absolute; inset: 24%; background: #c7f04b; content: ''; }
+</style>
