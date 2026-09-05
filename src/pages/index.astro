@@ -240,8 +240,8 @@
 		.side-nav b { transition: none; }
 	}
 	@media (max-width: 70rem) {
-		.side-nav { top: auto; right: 50%; bottom: 1rem; flex-direction: row; width: max-content; max-width: calc(100vw - 2rem); transform: translateX(50%); }
-		.side-nav a { padding: .55rem clamp(.45rem, 2vw, .7rem); }
+		.side-nav { top: auto; right: 0; bottom: .75rem; left: 0; flex-direction: row; justify-content: center; width: auto; max-width: none; transform: none; }
+		.side-nav a { padding: .55rem clamp(.4rem, 1.6vw, .7rem); }
 		.side-nav i { display: none; }
 		.side-nav span { display: none; }
 		.side-nav a.is-active { color: #f2f0ea; }
@@ -250,7 +250,13 @@
 	}
 	@media (max-width: 30rem) {
 		.project-info { align-items: flex-start; flex-direction: column; }
-		.side-nav a { font-size: .66rem; }
+		.side-nav { gap: 0; }
+		.side-nav a { padding-inline: .35rem; font-size: .62rem; }
+		.to-top { right: .65rem; bottom: 4.25rem; }
+		.service-stack { min-height: auto; }
+		.service-panel { top: 3.5rem; min-height: min(28rem, calc(100svh - 8rem)); }
+		.service-panel + .service-panel { top: 5rem; margin-top: 14vh; }
+		.service-panel:nth-child(3) { top: 6.5rem; }
 	}
 </style>
 
@@ -269,7 +275,7 @@
 			element.style.setProperty('--panel-shift', (progress * -18) + 'px');
 			element.style.setProperty('--panel-scale', String(1 - progress * .045));
 		});
-		icking = false;
+		ticking = false;
 	};
 
 	addEventListener('scroll', () => { if (!ticking) { requestAnimationFrame(updatePanels); ticking = true; } }, { passive: true });
