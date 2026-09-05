@@ -1,12 +1,13 @@
 ---
-const title = 'Goedkope website in Gistel | Bits by Tommy';
-const description = 'Een betaalbare of goedkope website laten maken in Gistel en omgeving? Bits by Tommy bouwt persoonlijke websites op maat die echt van jou zijn.';
+const title = 'Webdesign op maat in Gistel | Bits by Tommy';
+const description = 'Persoonlijk en betaalbaar webdesign in Gistel en omgeving. Een heldere website op maat die echt van jou is en met je zaak kan meegroeien.';
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const structuredData = {
 	'@context': 'https://schema.org',
 	'@type': 'ProfessionalService',
 	name: 'Bits by Tommy',
 	url: canonicalURL.href,
+	email: 'vercruyssetommy@telenet.be',
 	description,
 	areaServed: { '@type': 'City', name: 'Gistel' },
 	founder: { '@type': 'Person', name: 'Tommy' },
@@ -49,8 +50,8 @@ const structuredData = {
 		<main><section>
 			<p class=eyebrow>Webdesign uit Gistel</p>
 			<h1>Jouw idee. Mijn bits. <em>Een website die klopt.</em></h1>
-			<p class=intro>Ik leer eerst jouw zaak, organisatie of project kennen. Daarna vertaal ik ons gesprek naar creatief webdesign dat helder, betaalbaar en persoonlijk blijft.</p>
-			<a class=button href=#services>Ontdek wat mogelijk is ↘</a>
+			<p class=intro>Ik leer jouw zaak, organisatie of idee kennen en vertaal het naar een heldere, betaalbare website met een eigen karakter.</p>
+			<a class=button href=#contact>Vertel me je idee ↘</a>
 			<p class=languages>Voor zelfstandigen, verenigingen en mensen met een goed idee.</p>
 		</section>
 		<section class=services id=services aria-labelledby=services-title>
@@ -134,7 +135,13 @@ const structuredData = {
 			</div>
 		</section>
 	</main>
-		<footer id=contact><div><small>WEBDESIGN IN GISTEL & OMGEVING</small><p>Heb je iets in gedachten?</p></div><span>Vertel me wat je nodig hebt. Dan bekijken we het samen.</span></footer>
+		<footer id=contact>
+			<div><small>WEBDESIGN IN GISTEL & OMGEVING</small><p>Heb je iets in gedachten?</p></div>
+			<div class=contact-action>
+				<span>Vertel het gerust, ook als je nog niet helemaal zeker bent.</span>
+				<a href=mailto:vercruyssetommy@telenet.be>vercruyssetommy@telenet.be ↗</a>
+			</div>
+		</footer>
 		<a class=to-top href=#top aria-label='Terug naar boven'>↑</a>
 	</body>
 </html>
@@ -174,11 +181,16 @@ const structuredData = {
 	footer { display: flex; justify-content: space-between; padding: 2rem clamp(1.5rem, 5vw, 5rem); border-top: 1px solid rgb(242 240 234 / 10%); background: #15181c; }
 	footer p { margin: 0; color: #9ba1a8; }
 	footer small { display: block; margin-bottom: .65rem; color: #c7f04b; font: 500 .62rem 'IBM Plex Mono', monospace; letter-spacing: .13em; }
-	footer a { text-underline-offset: .3rem; }
+	.contact-action { display: flex; align-items: flex-end; flex-direction: column; gap: .65rem; text-align: right; }
+	.contact-action span { color: #9ba1a8; }
+	footer a { color: #f2f0ea; font-weight: 600; text-underline-offset: .3rem; transition: color 160ms ease; }
+	footer a:hover { color: #c7f04b; }
 	:focus-visible { outline: 2px solid #f2f0ea; outline-offset: 4px; }
 	@media (max-width: 40rem) {
 		header > a:last-child { display: none; }
-		footer { align-items: flex-start; flex-direction: column; gap: 1rem; }
+		footer { align-items: flex-start; flex-direction: column; gap: 1.5rem; padding-bottom: calc(7rem + env(safe-area-inset-bottom)); }
+		.contact-action { align-items: flex-start; text-align: left; }
+		.contact-action a { display: inline-flex; min-height: 2.75rem; align-items: center; }
 	}
 	@media (prefers-reduced-motion: reduce) {
 		html { scroll-behavior: auto; }
