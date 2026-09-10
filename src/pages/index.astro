@@ -8,6 +8,7 @@ const structuredData = {
 	name: 'Bits by Tommy',
 	url: canonicalURL.href,
 	email: 'vercruyssetommy@telenet.be',
+	telephone: '+32493767863',
 	description,
 	areaServed: { '@type': 'City', name: 'Gistel' },
 	founder: { '@type': 'Person', name: 'Tommy' },
@@ -139,7 +140,10 @@ const structuredData = {
 			<div><small>WEBDESIGN IN GISTEL & OMGEVING</small><p>Heb je iets in gedachten?</p></div>
 			<div class=contact-action>
 				<span>Vertel het gerust, ook als je nog niet helemaal zeker bent.</span>
-				<a href=mailto:vercruyssetommy@telenet.be>vercruyssetommy@telenet.be ↗</a>
+				<div class=contact-links>
+					<a href=mailto:vercruyssetommy@telenet.be>vercruyssetommy@telenet.be ↗</a>
+					<a href=tel:+32493767863>0493 76 78 63 ↗</a>
+				</div>
 			</div>
 		</footer>
 		<a class=to-top href=#top aria-label='Terug naar boven'>↑</a>
@@ -183,6 +187,7 @@ const structuredData = {
 	footer small { display: block; margin-bottom: .65rem; color: #c7f04b; font: 500 .62rem 'IBM Plex Mono', monospace; letter-spacing: .13em; }
 	.contact-action { display: flex; align-items: flex-end; flex-direction: column; gap: .65rem; text-align: right; }
 	.contact-action span { color: #9ba1a8; }
+	.contact-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .65rem 1.25rem; }
 	footer a { color: #f2f0ea; font-weight: 600; text-underline-offset: .3rem; transition: color 160ms ease; }
 	footer a:hover { color: #c7f04b; }
 	:focus-visible { outline: 2px solid #f2f0ea; outline-offset: 4px; }
@@ -190,6 +195,7 @@ const structuredData = {
 		header > a:last-child { display: none; }
 		footer { align-items: flex-start; flex-direction: column; gap: 1.5rem; padding-bottom: calc(7rem + env(safe-area-inset-bottom)); }
 		.contact-action { align-items: flex-start; text-align: left; }
+		.contact-links { align-items: flex-start; flex-direction: column; gap: 0; }
 		.contact-action a { display: inline-flex; min-height: 2.75rem; align-items: center; }
 	}
 	@media (prefers-reduced-motion: reduce) {
