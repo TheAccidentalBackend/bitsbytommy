@@ -21,8 +21,8 @@ const faqData = {
 	mainEntity: [
 		{
 			'@type': 'Question',
-			name: 'Wat kost een website laten maken?',
-			acceptedAnswer: { '@type': 'Answer', text: 'De prijs hangt af van wat je website nodig heeft. Na een eerste gesprek krijg je een duidelijk voorstel met prijs en planning, zonder onnodige onderdelen of verborgen abonnementen.' },
+			name: 'Wat kost een website ongeveer?',
+			acceptedAnswer: { '@type': 'Answer', text: 'Een eenvoudige website op één pagina kost doorgaans ongeveer €500 exclusief btw. Voor een eenvoudige website met maximaal drie pagina’s kun je rekenen op ongeveer €750 exclusief btw. Dit zijn richtprijzen. Maatwerk, animatie en specifieke functies bepalen mee hoeveel werk nodig is.' },
 		},
 		{
 			'@type': 'Question',
@@ -68,11 +68,13 @@ const faqData = {
 	<body id=top>
 		<header><a href=/>bits <small>BY TOMMY</small></a><a href=#contact>Vertel me wat je nodig hebt</a></header>
 		<nav class=side-nav aria-label=Hoofdnavigatie>
-			<a href=#services><b>Visie</b><i aria-hidden=true></i><span>01</span></a>
+			<a href=#services data-secondary><b>Visie</b><i aria-hidden=true></i><span>01</span></a>
 			<a href=#portfolio><b>Portfolio</b><i aria-hidden=true></i><span>02</span></a>
-			<a href=#approach><b>Werkwijze</b><i aria-hidden=true></i><span>03</span></a>
-			<a href=#about><b>Over mij</b><i aria-hidden=true></i><span>04</span></a>
-			<a href=#contact><b>Contact</b><i aria-hidden=true></i><span>05</span></a>
+			<a href=#approach data-secondary><b>Werkwijze</b><i aria-hidden=true></i><span>03</span></a>
+			<a href=#pricing><b>Prijzen</b><i aria-hidden=true></i><span>04</span></a>
+			<a href=#faq><b>FAQ</b><i aria-hidden=true></i><span>05</span></a>
+			<a href=#about data-secondary><b>Over mij</b><i aria-hidden=true></i><span>06</span></a>
+			<a href=#contact><b>Contact</b><i aria-hidden=true></i><span>07</span></a>
 		</nav>
 		<main><section>
 			<p class=eyebrow>Website laten maken in Gistel</p>
@@ -133,6 +135,40 @@ const faqData = {
 				<li><span>03</span><div><h3>Ontwerp en uitvoering</h3><p>Ik ga zelfstandig aan de slag. Op afgesproken momenten bekijken we het resultaat en verzamelen we je feedback.</p></div></li>
 			</ol>
 		</section>
+		<section class=pricing id=pricing aria-labelledby=pricing-title>
+			<div class=pricing-heading>
+				<p class=eyebrow>Richtprijzen</p>
+				<h2 id=pricing-title>Duidelijk starten. Vrij blijven groeien.</h2>
+				<p>Geen vaste pakketten waarin je moet passen. Wel twee heldere voorbeelden om je budget in te schatten.</p>
+			</div>
+			<div class=price-options>
+				<article>
+					<div><span>ÉÉN PAGINA</span><strong>± €500 <small>excl. btw</small></strong></div>
+					<h3>Een sterke website op één pagina.</h3>
+					<ul>
+						<li>Ontwerp op maat</li>
+						<li>Eén overzichtelijke scrollpagina</li>
+						<li>Geschikt voor mobiel, tablet en desktop</li>
+						<li>Contactgegevens en klikbare contactknoppen</li>
+						<li>Technische basis SEO</li>
+						<li>Eén correctieronde</li>
+						<li>Publicatie en technische configuratie</li>
+					</ul>
+				</article>
+				<article>
+					<div><span>TOT DRIE PAGINA’S</span><strong>± €750 <small>excl. btw</small></strong></div>
+					<h3>Meer ruimte voor je verhaal.</h3>
+					<ul>
+						<li>Alles van de website op één pagina</li>
+						<li>Maximaal drie afzonderlijke pagina’s</li>
+						<li>Duidelijke navigatie tussen de pagina’s</li>
+						<li>Eigen SEO titel en beschrijving per pagina</li>
+					</ul>
+				</article>
+				<p class=price-note>Teksten en beelden worden aangeleverd door de klant. Webshops, meertaligheid en bijzondere functies zijn niet inbegrepen en worden vooraf apart besproken.</p>
+			</div>
+			<p class=pricing-context>Dit zijn richtprijzen, geen vaste pakketten. Eén bijzondere pagina met veel maatwerk, animatie of specifieke functies kan meer werk vragen dan drie eenvoudige pagina’s. Je krijgt altijd vooraf een duidelijke prijs.</p>
+		</section>
 		<section class=ownership id=ownership aria-labelledby=ownership-title>
 			<div>
 				<p class=eyebrow>Eerlijk eigenaarschap</p>
@@ -147,13 +183,13 @@ const faqData = {
 				</ul>
 			</div>
 		</section>
-		<section class=faq aria-labelledby=faq-title>
+		<section class=faq id=faq aria-labelledby=faq-title>
 			<div class=faq-heading>
 				<p class=eyebrow>Veelgestelde vragen</p>
 				<h2 id=faq-title>Een website laten maken zonder vraagtekens.</h2>
 			</div>
 			<div class=faq-list>
-				<details><summary>Wat kost een website laten maken?</summary><p>De prijs hangt af van wat je website nodig heeft. Na een eerste gesprek krijg je een duidelijk voorstel met prijs en planning, zonder onnodige onderdelen of verborgen abonnementen.</p></details>
+				<details><summary>Wat kost een website ongeveer?</summary><p>Een eenvoudige website op één pagina kost doorgaans ongeveer €500 exclusief btw. Voor een eenvoudige website met maximaal drie pagina’s kun je rekenen op ongeveer €750 exclusief btw. Dit zijn richtprijzen. Maatwerk, animatie en specifieke functies bepalen mee hoeveel werk nodig is.</p></details>
 				<details><summary>Is de website echt van mij?</summary><p>Ja. Je koopt je website en huurt ze niet. Er is geen verplicht onderhoudsabonnement. Je domeinnaam blijft de voornaamste vaste jaarlijkse kost, tenzij je zelf extra betaalde diensten kiest.</p></details>
 				<details><summary>Kan ik mijn website zelf aanpassen?</summary><p>Ja. Bestaande teksten, foto’s, prijzen en andere inhoud kun je eenvoudig zelf aanpassen. Voor nieuwe pagina’s of functies bekijken we samen een duidelijke uitbreiding.</p></details>
 				<details><summary>Werk je alleen voor klanten uit Gistel?</summary><p>Nee. Ik werk vanuit Gistel voor zelfstandigen, verenigingen en projecten in de omgeving en daarbuiten. Veel kan eenvoudig op afstand besproken worden.</p></details>
@@ -284,10 +320,27 @@ const faqData = {
 	.process span { padding-top: .3rem; color: #c7f04b; font: 500 .68rem 'IBM Plex Mono', monospace; }
 	.process h3 { margin: 0 0 .65rem; font-size: 1.15rem; font-weight: 500; }
 	.process p { max-width: 32rem; margin: 0; color: #9ba1a8; line-height: 1.6; }
+	.pricing { grid-template-columns: minmax(18rem, .7fr) minmax(28rem, 1.3fr); gap: clamp(3rem, 8vw, 8rem); align-items: start; min-height: auto; border-top: 1px solid rgb(242 240 234 / 10%); background: #111316; }
+	.pricing-heading h2 { max-width: 11ch; margin: 0; font-size: clamp(2.5rem, 5vw, 5rem); font-weight: 500; letter-spacing: -.055em; line-height: 1; }
+	.pricing-heading > p:last-child { max-width: 31rem; margin: 1.75rem 0 0; color: #9ba1a8; line-height: 1.7; }
+	.price-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: rgb(242 240 234 / 14%); border: 1px solid rgb(242 240 234 / 14%); }
+	.price-options article { padding: clamp(1.5rem, 3vw, 2.5rem); background: #191c20; }
+	.price-options article > div { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+	.price-options span { padding-top: .3rem; color: #c7f04b; font: 500 .62rem 'IBM Plex Mono', monospace; letter-spacing: .1em; }
+	.price-options strong { font-size: clamp(1.5rem, 3vw, 2.4rem); font-weight: 500; letter-spacing: -.04em; white-space: nowrap; }
+	.price-options strong small { display: block; color: #777d84; font: 500 .58rem 'IBM Plex Mono', monospace; letter-spacing: .08em; text-align: right; }
+	.price-options h3 { max-width: 13ch; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; font-weight: 500; line-height: 1.15; }
+	.price-options ul { margin: 0; padding: 0; list-style: none; }
+	.price-options li { padding: .65rem 0; border-top: 1px solid rgb(242 240 234 / 10%); color: #b9bdc1; font-size: .88rem; line-height: 1.5; }
+	.price-options li::before { margin-right: .65rem; color: #c7f04b; content: '·'; }
+	.price-note { grid-column: 1 / -1; margin: 0; padding: 1.25rem 1.5rem; background: #15181c; color: #9ba1a8; font-size: .78rem; line-height: 1.6; }
+	.pricing-context { grid-column: 2; max-width: 48rem; margin: 0; padding-left: 1.25rem; border-left: 2px solid #6657c8; color: #b9bdc1; line-height: 1.7; }
 	@media (max-width: 52rem) {
 		.portfolio { grid-template-columns: 1fr; }
 		.approach { grid-template-columns: 1fr; }
 		.approach::before { display: none; }
+		.pricing { grid-template-columns: 1fr; }
+		.pricing-context { grid-column: 1; }
 	}
 	.ownership { grid-template-columns: minmax(18rem, 1fr) minmax(22rem, 1fr); gap: clamp(4rem, 10vw, 10rem); min-height: auto; border-top: 1px solid rgb(242 240 234 / 10%); background: #f2f0ea; color: #0b0d0f; }
 	.ownership .eyebrow { color: #555b61; }
@@ -333,6 +386,7 @@ const faqData = {
 	@media (max-width: 70rem) {
 		.side-nav { top: auto; right: 0; bottom: calc(1.15rem + env(safe-area-inset-bottom)); left: 0; flex-direction: row; justify-content: center; width: auto; max-width: none; transform: none; }
 		.side-nav a { min-height: 2.75rem; padding: .72rem clamp(.4rem, 1.6vw, .7rem); }
+		.side-nav a[data-secondary] { display: none; }
 		.side-nav i { display: none; }
 		.side-nav span { display: none; }
 		.side-nav a.is-active { color: #f2f0ea; }
@@ -340,6 +394,8 @@ const faqData = {
 		.to-top { bottom: calc(5.35rem + env(safe-area-inset-bottom)); }
 	}
 	@media (max-width: 30rem) {
+		.price-options { grid-template-columns: 1fr; }
+		.price-note { grid-column: 1; }
 		.project-info { align-items: flex-start; flex-direction: column; }
 		.side-nav { gap: 0; }
 		.side-nav a { padding-inline: .35rem; font-size: .66rem; }
@@ -388,6 +444,6 @@ const faqData = {
 		if (visible) activateNavLink(visible.target.id);
 	}, { rootMargin: '-35% 0px -55% 0px', threshold: 0 });
 
-	document.querySelectorAll('#services, #portfolio, #approach, #about, #contact').forEach((section) => sectionObserver.observe(section));
+	document.querySelectorAll('#services, #portfolio, #approach, #pricing, #faq, #about, #contact').forEach((section) => sectionObserver.observe(section));
 	activateNavLink('services');
 </script>
