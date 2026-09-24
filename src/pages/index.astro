@@ -144,13 +144,13 @@ const faqData = {
 			<div class=price-options>
 				<article>
 					<div><span>ÉÉN PAGINA</span><strong>± €500 <small>excl. btw</small></strong></div>
-					<h3>Een sterke website op één pagina.</h3>
+					<h3>Sterk op één pagina.</h3>
 					<ul>
 						<li>Ontwerp op maat</li>
-						<li>Eén overzichtelijke scrollpagina</li>
+						<li><strong>Eén overzichtelijke scrollpagina</strong></li>
 						<li>Geschikt voor mobiel, tablet en desktop</li>
 						<li>Contactgegevens en klikbare contactknoppen</li>
-						<li>Technische basis SEO</li>
+						<li><strong>Technische basis SEO</strong></li>
 						<li>Eén correctieronde</li>
 						<li>Publicatie en technische configuratie</li>
 					</ul>
@@ -159,10 +159,13 @@ const faqData = {
 					<div><span>TOT DRIE PAGINA’S</span><strong>± €750 <small>excl. btw</small></strong></div>
 					<h3>Meer ruimte voor je verhaal.</h3>
 					<ul>
-						<li>Alles van de website op één pagina</li>
-						<li>Maximaal drie afzonderlijke pagina’s</li>
-						<li>Duidelijke navigatie tussen de pagina’s</li>
-						<li>Eigen SEO titel en beschrijving per pagina</li>
+						<li>Ontwerp op maat</li>
+						<li><strong>Maximaal drie afzonderlijke pagina’s</strong></li>
+						<li>Geschikt voor mobiel, tablet en desktop</li>
+						<li>Contactgegevens en klikbare contactknoppen</li>
+						<li><strong>Eigen SEO titel en beschrijving per pagina</strong></li>
+						<li>Eén correctieronde</li>
+						<li>Publicatie en technische configuratie</li>
 					</ul>
 				</article>
 				<p class=price-note>Teksten en beelden worden aangeleverd door de klant. Webshops, meertaligheid en bijzondere functies zijn niet inbegrepen en worden vooraf apart besproken.</p>
@@ -327,12 +330,13 @@ const faqData = {
 	.price-options article { padding: clamp(1.5rem, 3vw, 2.5rem); background: #191c20; }
 	.price-options article > div { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
 	.price-options span { padding-top: .3rem; color: #c7f04b; font: 500 .62rem 'IBM Plex Mono', monospace; letter-spacing: .1em; }
-	.price-options strong { font-size: clamp(1.5rem, 3vw, 2.4rem); font-weight: 500; letter-spacing: -.04em; white-space: nowrap; }
-	.price-options strong small { display: block; color: #777d84; font: 500 .58rem 'IBM Plex Mono', monospace; letter-spacing: .08em; text-align: right; }
-	.price-options h3 { max-width: 13ch; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; font-weight: 500; line-height: 1.15; }
+	.price-options article > div > strong { font-size: clamp(1.5rem, 3vw, 2.4rem); font-weight: 500; letter-spacing: -.04em; white-space: nowrap; }
+	.price-options article > div > strong small { display: block; color: #777d84; font: 500 .58rem 'IBM Plex Mono', monospace; letter-spacing: .08em; text-align: right; }
+	.price-options h3 { max-width: 15ch; min-height: 3.5rem; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; font-weight: 500; line-height: 1.15; }
 	.price-options ul { margin: 0; padding: 0; list-style: none; }
-	.price-options li { padding: .65rem 0; border-top: 1px solid rgb(242 240 234 / 10%); color: #b9bdc1; font-size: .88rem; line-height: 1.5; }
+	.price-options li { display: flex; min-height: 3.6rem; align-items: center; padding: .65rem 0; border-top: 1px solid rgb(242 240 234 / 10%); color: #b9bdc1; font-size: .88rem; line-height: 1.5; }
 	.price-options li::before { margin-right: .65rem; color: #c7f04b; content: '·'; }
+	.price-options li strong { color: #f2f0ea; font-weight: 600; }
 	.price-note { grid-column: 1 / -1; margin: 0; padding: 1.25rem 1.5rem; background: #15181c; color: #9ba1a8; font-size: .78rem; line-height: 1.6; }
 	.pricing-context { grid-column: 2; max-width: 48rem; margin: 0; padding-left: 1.25rem; border-left: 2px solid #6657c8; color: #b9bdc1; line-height: 1.7; }
 	@media (max-width: 52rem) {
@@ -396,6 +400,7 @@ const faqData = {
 	@media (max-width: 30rem) {
 		.price-options { grid-template-columns: 1fr; }
 		.price-note { grid-column: 1; }
+		.price-options h3, .price-options li { min-height: auto; }
 		.project-info { align-items: flex-start; flex-direction: column; }
 		.side-nav { gap: 0; }
 		.side-nav a { padding-inline: .35rem; font-size: .66rem; }
