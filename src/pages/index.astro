@@ -1,6 +1,6 @@
 ---
-const title = 'Webdesign op maat in Gistel | Bits by Tommy';
-const description = 'Persoonlijk en betaalbaar webdesign in Gistel en omgeving. Een heldere website op maat die echt van jou is en met je zaak kan meegroeien.';
+const title = 'Website laten maken in Gistel | Bits by Tommy';
+const description = 'Een persoonlijke en betaalbare website laten maken in Gistel? Bits by Tommy bouwt helder webdesign op maat dat echt van jou is en kan meegroeien.';
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const structuredData = {
 	'@context': 'https://schema.org',
@@ -14,6 +14,32 @@ const structuredData = {
 	founder: { '@type': 'Person', name: 'Tommy' },
 	knowsLanguage: ['nl', 'fr', 'en'],
 	serviceType: 'Webdesign',
+};
+const faqData = {
+	'@context': 'https://schema.org',
+	'@type': 'FAQPage',
+	mainEntity: [
+		{
+			'@type': 'Question',
+			name: 'Wat kost een website laten maken?',
+			acceptedAnswer: { '@type': 'Answer', text: 'De prijs hangt af van wat je website nodig heeft. Na een eerste gesprek krijg je een duidelijk voorstel met prijs en planning, zonder onnodige onderdelen of verborgen abonnementen.' },
+		},
+		{
+			'@type': 'Question',
+			name: 'Is de website echt van mij?',
+			acceptedAnswer: { '@type': 'Answer', text: 'Ja. Je koopt je website en huurt ze niet. Er is geen verplicht onderhoudsabonnement. Je domeinnaam blijft de voornaamste vaste jaarlijkse kost, tenzij je zelf extra betaalde diensten kiest.' },
+		},
+		{
+			'@type': 'Question',
+			name: 'Kan ik mijn website zelf aanpassen?',
+			acceptedAnswer: { '@type': 'Answer', text: 'Ja. Bestaande teksten, foto’s, prijzen en andere inhoud kun je eenvoudig zelf aanpassen. Voor nieuwe pagina’s of functies bekijken we samen een duidelijke uitbreiding.' },
+		},
+		{
+			'@type': 'Question',
+			name: 'Werk je alleen voor klanten uit Gistel?',
+			acceptedAnswer: { '@type': 'Answer', text: 'Bits by Tommy werkt vanuit Gistel voor zelfstandigen, verenigingen en projecten in de omgeving en daarbuiten. Veel kan eenvoudig op afstand besproken worden.' },
+		},
+	],
 };
 ---
 
@@ -36,6 +62,7 @@ const structuredData = {
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={description} />
 		<script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+		<script type="application/ld+json" set:html={JSON.stringify(faqData)} />
 		<title>{title}</title>
 	</head>
 	<body id=top>
@@ -48,7 +75,7 @@ const structuredData = {
 			<a href=#contact><b>Contact</b><i aria-hidden=true></i><span>05</span></a>
 		</nav>
 		<main><section>
-			<p class=eyebrow>Webdesign uit Gistel</p>
+			<p class=eyebrow>Website laten maken in Gistel</p>
 			<h1>Jouw idee. Mijn bits. <em>Een website die klopt.</em></h1>
 			<p class=intro>Ik leer jouw zaak, organisatie of idee kennen en vertaal het naar een heldere, betaalbare website met een eigen karakter.</p>
 			<a class=button href=#contact>Vertel me je idee ↘</a>
@@ -84,9 +111,9 @@ const structuredData = {
 				<p>Mijn portfolio groeit mee met Bits by Tommy. Dit is waar het vandaag begint.</p>
 			</div>
 			<a class=project-card href=https://maramusic.be/ target=_blank rel=noreferrer>
-				<div class=project-visual aria-hidden=true>
+				<div class=project-visual>
 					<span class=project-window>maramusic.be</span>
-					<img src=/mara-portfolio.png alt='' loading=lazy />
+					<img src=/mara-portfolio.png alt='Voorbeeld van de meertalige artiestenwebsite Maramusic.be' loading=lazy />
 				</div>
 				<div class=project-info>
 					<div><span>01 / MUZIEK</span><h3>Maramusic.be</h3><p>Een meertalige artiestenwebsite</p></div>
@@ -118,6 +145,18 @@ const structuredData = {
 					<li><span>LATEN GROEIEN</span><p>Wil je later een nieuwe pagina, link of functie? Dan krijg je vooraf een duidelijk voorstel.</p></li>
 					<li><span>WEL JAARLIJKS</span><p>Je domeinnaam blijft je enige vaste kost, tenzij je zelf voor een extra betaalde dienst kiest.</p></li>
 				</ul>
+			</div>
+		</section>
+		<section class=faq aria-labelledby=faq-title>
+			<div class=faq-heading>
+				<p class=eyebrow>Veelgestelde vragen</p>
+				<h2 id=faq-title>Een website laten maken zonder vraagtekens.</h2>
+			</div>
+			<div class=faq-list>
+				<details><summary>Wat kost een website laten maken?</summary><p>De prijs hangt af van wat je website nodig heeft. Na een eerste gesprek krijg je een duidelijk voorstel met prijs en planning, zonder onnodige onderdelen of verborgen abonnementen.</p></details>
+				<details><summary>Is de website echt van mij?</summary><p>Ja. Je koopt je website en huurt ze niet. Er is geen verplicht onderhoudsabonnement. Je domeinnaam blijft de voornaamste vaste jaarlijkse kost, tenzij je zelf extra betaalde diensten kiest.</p></details>
+				<details><summary>Kan ik mijn website zelf aanpassen?</summary><p>Ja. Bestaande teksten, foto’s, prijzen en andere inhoud kun je eenvoudig zelf aanpassen. Voor nieuwe pagina’s of functies bekijken we samen een duidelijke uitbreiding.</p></details>
+				<details><summary>Werk je alleen voor klanten uit Gistel?</summary><p>Nee. Ik werk vanuit Gistel voor zelfstandigen, verenigingen en projecten in de omgeving en daarbuiten. Veel kan eenvoudig op afstand besproken worden.</p></details>
 			</div>
 		</section>
 		<section class=about id=about aria-labelledby=about-title>
@@ -258,6 +297,15 @@ const structuredData = {
 	.ownership li { display: grid; grid-template-columns: 8rem 1fr; gap: 1.5rem; padding: 1.4rem 0; border-bottom: 1px solid rgb(11 13 15 / 18%); }
 	.ownership li span { padding-top: .3rem; color: #6657c8; font: 500 .64rem 'IBM Plex Mono', monospace; letter-spacing: .08em; }
 	.ownership li p { margin: 0; color: #3c4146; line-height: 1.6; }
+	.faq { grid-template-columns: minmax(18rem, .8fr) minmax(24rem, 1.2fr); gap: clamp(4rem, 10vw, 10rem); min-height: auto; border-top: 1px solid rgb(242 240 234 / 10%); }
+	.faq-heading h2 { max-width: 12ch; margin: 0; font-size: clamp(2.5rem, 5vw, 5rem); font-weight: 500; letter-spacing: -.055em; line-height: 1; }
+	.faq-list { border-top: 1px solid rgb(242 240 234 / 14%); }
+	.faq-list details { border-bottom: 1px solid rgb(242 240 234 / 14%); }
+	.faq-list summary { position: relative; padding: 1.5rem 3rem 1.5rem 0; cursor: pointer; font-size: 1.05rem; font-weight: 500; list-style: none; }
+	.faq-list summary::-webkit-details-marker { display: none; }
+	.faq-list summary::after { position: absolute; top: 1.35rem; right: .25rem; color: #c7f04b; font-size: 1.35rem; content: '+'; transition: transform 180ms ease; }
+	.faq-list details[open] summary::after { transform: rotate(45deg); }
+	.faq-list details p { max-width: 42rem; margin: 0; padding: 0 3rem 1.5rem 0; color: #9ba1a8; line-height: 1.7; }
 	.about { grid-template-columns: minmax(15rem, .8fr) minmax(22rem, 1.2fr); gap: clamp(4rem, 10vw, 10rem); min-height: auto; border-top: 1px solid rgb(242 240 234 / 10%); background: #15181c; }
 	.about-marker { align-self: center; display: grid; grid-template-columns: auto 1fr; gap: 1.25rem; align-items: end; }
 	.about-marker > span { color: #c7f04b; font-size: clamp(7rem, 17vw, 14rem); font-weight: 500; letter-spacing: -.1em; line-height: .72; }
@@ -268,6 +316,7 @@ const structuredData = {
 	@media (max-width: 52rem) {
 		.ownership { grid-template-columns: 1fr; }
 		.ownership li { grid-template-columns: 7rem 1fr; }
+		.faq { grid-template-columns: 1fr; }
 		.about { grid-template-columns: 1fr; }
 		.about-marker { justify-self: start; }
 	}
