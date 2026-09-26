@@ -1,6 +1,6 @@
 ---
-const title = 'Website laten maken in Gistel | Bits by Tommy';
-const description = 'Een persoonlijke en betaalbare website laten maken in Gistel? Bits by Tommy bouwt helder webdesign op maat dat echt van jou is en kan meegroeien.';
+const title = 'Création de site web à Gistel | Bits by Tommy';
+const description = 'Création de sites web personnels et abordables à Gistel et environs. Un site clair, sur mesure, qui vous appartient et peut évoluer avec votre activité.';
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const structuredData = {
 	'@context': 'https://schema.org',
@@ -13,7 +13,7 @@ const structuredData = {
 	areaServed: { '@type': 'City', name: 'Gistel' },
 	founder: { '@type': 'Person', name: 'Tommy' },
 	knowsLanguage: ['nl', 'fr', 'en'],
-	serviceType: 'Webdesign',
+	serviceType: 'Création de sites web',
 };
 const faqData = {
 	'@context': 'https://schema.org',
@@ -21,29 +21,29 @@ const faqData = {
 	mainEntity: [
 		{
 			'@type': 'Question',
-			name: 'Wat kost een website ongeveer?',
-			acceptedAnswer: { '@type': 'Answer', text: 'Een eenvoudige website op één pagina kost doorgaans ongeveer €500 exclusief btw. Voor een eenvoudige website met maximaal drie pagina’s kun je rekenen op ongeveer €750 exclusief btw. Dit zijn richtprijzen. Maatwerk, animatie en specifieke functies bepalen mee hoeveel werk nodig is.' },
+			name: 'Combien coûte environ un site web ?',
+			acceptedAnswer: { '@type': 'Answer', text: 'Un site web simple d’une page coûte généralement environ 500 € hors TVA. Pour un site simple comprenant jusqu’à trois pages, comptez environ 750 € hors TVA. Il s’agit de prix indicatifs. Le sur-mesure, les animations et les fonctions spécifiques influencent la quantité de travail nécessaire.' },
 		},
 		{
 			'@type': 'Question',
-			name: 'Is de website echt van mij?',
-			acceptedAnswer: { '@type': 'Answer', text: 'Ja. Je koopt je website en huurt ze niet. Er is geen verplicht onderhoudsabonnement. Je domeinnaam blijft de voornaamste vaste jaarlijkse kost, tenzij je zelf extra betaalde diensten kiest.' },
+			name: 'Le site web m’appartient-il vraiment ?',
+			acceptedAnswer: { '@type': 'Answer', text: 'Oui. Vous achetez votre site, vous ne le louez pas. Aucun abonnement de maintenance n’est imposé. Votre nom de domaine reste le principal coût annuel fixe, sauf si vous choisissez des services payants supplémentaires.' },
 		},
 		{
 			'@type': 'Question',
-			name: 'Kan ik mijn website zelf aanpassen?',
-			acceptedAnswer: { '@type': 'Answer', text: 'Ja. Bestaande teksten, foto’s, prijzen en andere inhoud kun je eenvoudig zelf aanpassen. Voor nieuwe pagina’s of functies bekijken we samen een duidelijke uitbreiding.' },
+			name: 'Puis-je modifier mon site moi-même ?',
+			acceptedAnswer: { '@type': 'Answer', text: 'Oui. Vous pouvez facilement modifier les textes, photos, prix et autres contenus existants. Pour de nouvelles pages ou fonctions, nous définissons ensemble une extension claire.' },
 		},
 		{
 			'@type': 'Question',
-			name: 'Werk je alleen voor klanten uit Gistel?',
-			acceptedAnswer: { '@type': 'Answer', text: 'Bits by Tommy werkt vanuit Gistel voor zelfstandigen, verenigingen en projecten in de omgeving en daarbuiten. Veel kan eenvoudig op afstand besproken worden.' },
+			name: 'Travaillez-vous uniquement avec des clients de Gistel ?',
+			acceptedAnswer: { '@type': 'Answer', text: 'Non. Depuis Gistel, Bits by Tommy travaille avec des indépendants, associations et projets dans les environs et au-delà. Une grande partie du processus peut facilement se dérouler à distance.' },
 		},
 	],
 };
 ---
 
-<html lang="nl-BE">
+<html lang="fr-BE">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" />
@@ -57,7 +57,7 @@ const faqData = {
 		<link rel="alternate" hreflang="x-default" href="https://bitsbytommy.be/" />
 		<meta name="description" content={description} />
 		<meta property="og:type" content="website" />
-		<meta property="og:locale" content="nl_BE" />
+		<meta property="og:locale" content="fr_BE" />
 		<meta property="og:site_name" content="Bits by Tommy" />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
@@ -73,167 +73,167 @@ const faqData = {
 		<header>
 			<a href=/>bits <small>BY TOMMY</small></a>
 			<div class=header-actions>
-				<nav class=language-switcher aria-label=Taal><a href=/ aria-current=page>NL</a><a href=/fr/>FR</a><a href=/en/>EN</a></nav>
-				<a class=header-cta href=#contact>Vertel me wat je nodig hebt</a>
+				<nav class=language-switcher aria-label=Langue><a href=/>NL</a><a href=/fr/ aria-current=page>FR</a><a href=/en/>EN</a></nav>
+				<a class=header-cta href=#contact>Parlez-moi de votre projet</a>
 			</div>
 		</header>
-		<nav class=side-nav aria-label=Hoofdnavigatie>
-			<a href=#services data-secondary><b>Visie</b><i aria-hidden=true></i><span>01</span></a>
+		<nav class=side-nav aria-label='Navigation principale'>
+			<a href=#services data-secondary><b>Vision</b><i aria-hidden=true></i><span>01</span></a>
 			<a href=#portfolio><b>Portfolio</b><i aria-hidden=true></i><span>02</span></a>
-			<a href=#approach data-secondary><b>Werkwijze</b><i aria-hidden=true></i><span>03</span></a>
-			<a href=#pricing><b>Prijzen</b><i aria-hidden=true></i><span>04</span></a>
+			<a href=#approach data-secondary><b>Méthode</b><i aria-hidden=true></i><span>03</span></a>
+			<a href=#pricing><b>Tarifs</b><i aria-hidden=true></i><span>04</span></a>
 			<a href=#faq><b>FAQ</b><i aria-hidden=true></i><span>05</span></a>
-			<a href=#about data-secondary><b>Over mij</b><i aria-hidden=true></i><span>06</span></a>
+			<a href=#about data-secondary><b>À propos</b><i aria-hidden=true></i><span>06</span></a>
 			<a href=#contact><b>Contact</b><i aria-hidden=true></i><span>07</span></a>
 		</nav>
 		<main><section>
-			<p class=eyebrow>Website laten maken in Gistel</p>
-			<h1>Jouw idee. Mijn bits. <em>Een website die klopt.</em></h1>
-			<p class=intro>Ik leer jouw zaak, organisatie of idee kennen en vertaal het naar een heldere, betaalbare website met een eigen karakter.</p>
-			<a class=button href=#contact>Vertel me je idee ↘</a>
-			<p class=languages>Voor zelfstandigen, verenigingen en mensen met een goed idee.</p>
+			<p class=eyebrow>Création de site web à Gistel</p>
+			<h1>Votre idée. Mes bits. <em>Un site qui vous correspond.</em></h1>
+			<p class=intro>Je découvre votre activité, votre organisation ou votre idée et je la transforme en un site clair, abordable et doté de sa propre personnalité.</p>
+			<a class=button href=#contact>Parlez-moi de votre idée ↘</a>
+			<p class=languages>Pour les indépendants, les associations et les personnes qui ont une bonne idée.</p>
 		</section>
 		<section class=services id=services aria-labelledby=services-title>
 			<div class=section-heading>
-				<p class=eyebrow>Hoe ik websites maak</p>
-				<h2 id=services-title>Geen pakketten. Wel een goed gesprek.</h2>
+				<p class=eyebrow>Ma façon de créer</p>
+				<h2 id=services-title>Pas de formules rigides. Une vraie discussion.</h2>
 			</div>
 			<div class=service-stack>
 				<article class=service-panel>
-					<div class=panel-top><span>01 / JIJ</span><span>JOUW INBRENG</span></div>
-					<div><h3>Jij kent jouw verhaal.</h3><p>Ik luister naar wat je doet, voor wie je het doet en waar je naartoe wilt. Die kennis vormt de basis van het ontwerp.</p></div>
-					<strong>Jouw inbreng bepaalt de richting. Ik zorg voor de vertaling.</strong>
+					<div class=panel-top><span>01 / VOUS</span><span>VOTRE CONTRIBUTION</span></div>
+					<div><h3>Vous connaissez votre histoire.</h3><p>J’écoute ce que vous faites, pour qui vous le faites et où vous souhaitez aller. Ces connaissances forment la base du design.</p></div>
+					<strong>Votre contribution donne la direction. Je la transforme en site web.</strong>
 				</article>
 				<article class=service-panel>
-					<div class=panel-top><span>02 / EENVOUD</span><span>ALLEEN WAT WERKT</span></div>
-					<div><h3>Eenvoud is een keuze.</h3><p>Een duidelijke structuur, sterke beelden en slimme details. Alles heeft een reden. Niets staat in de weg van je bezoeker.</p></div>
-					<strong>Mooi om naar te kijken. Logisch om te gebruiken.</strong>
+					<div class=panel-top><span>02 / SIMPLICITÉ</span><span>UNIQUEMENT L’UTILE</span></div>
+					<div><h3>La simplicité est un choix.</h3><p>Une structure claire, des images fortes et des détails bien pensés. Chaque élément a une raison d’être. Rien ne gêne votre visiteur.</p></div>
+					<strong>Agréable à regarder. Logique à utiliser.</strong>
 				</article>
 				<article class=service-panel>
-					<div class=panel-top><span>03 / WAARDE</span><span>EERLIJK BUDGET</span></div>
-					<div><h3>Betaalbaar met karakter.</h3><p>Een goedkope website hoeft niet goedkoop aan te voelen. Je betaalt voor doordacht ontwerp en degelijk werk, niet voor de naam van een groot bureau.</p></div>
-					<strong>Een originele website zonder een onbegrijpelijke factuur.</strong>
+					<div class=panel-top><span>03 / VALEUR</span><span>BUDGET HONNÊTE</span></div>
+					<div><h3>Abordable avec du caractère.</h3><p>Un site abordable ne doit pas paraître bon marché. Vous payez pour un design réfléchi et un travail solide, pas pour le nom d’une grande agence.</p></div>
+					<strong>Un site original sans facture incompréhensible.</strong>
 				</article>
 			</div>
 		</section>
 		<section class=portfolio id=portfolio aria-labelledby=portfolio-title>
 			<div class=portfolio-heading>
 				<p class=eyebrow>Portfolio</p>
-				<h2 id=portfolio-title>Eén project. Wel helemaal echt.</h2>
-				<p>Mijn portfolio groeit mee met Bits by Tommy. Dit is waar het vandaag begint.</p>
+				<h2 id=portfolio-title>Un projet. Tout à fait réel.</h2>
+				<p>Mon portfolio grandit avec Bits by Tommy. Voici où il commence aujourd’hui.</p>
 			</div>
 			<a class=project-card href=https://maramusic.be/ target=_blank rel=noreferrer>
 				<div class=project-visual>
 					<span class=project-window>maramusic.be</span>
-					<img src=/mara-portfolio.png alt='Voorbeeld van de meertalige artiestenwebsite Maramusic.be' loading=lazy />
+					<img src=/mara-portfolio.png alt='Exemple du site multilingue pour artiste Maramusic.be' loading=lazy />
 				</div>
 				<div class=project-info>
-					<div><span>01 / MUZIEK</span><h3>Maramusic.be</h3><p>Een meertalige artiestenwebsite</p></div>
-					<strong>Bekijk de website ↗</strong>
+					<div><span>01 / MUSIQUE</span><h3>Maramusic.be</h3><p>Un site multilingue pour artiste</p></div>
+					<strong>Voir le site ↗</strong>
 				</div>
 			</a>
 		</section>
 		<section class=approach id=approach aria-labelledby=approach-title>
 			<div class=approach-copy>
-				<p class=eyebrow>Een helder traject</p>
-				<h2 id=approach-title>Eerst luisteren. Dan ontwerpen.</h2>
-				<p>We maken samen het plan. Daarna neem ik het ontwerp en de uitvoering voor mijn rekening. Op afgesproken momenten kun je meekijken en bijsturen.</p>
+				<p class=eyebrow>Un parcours clair</p>
+				<h2 id=approach-title>D’abord écouter. Ensuite créer.</h2>
+				<p>Nous établissons le plan ensemble. Je prends ensuite en charge le design et la réalisation. À des moments convenus, vous pouvez suivre le résultat et l’orienter si nécessaire.</p>
 			</div>
 			<ol class=process>
-				<li><span>01</span><div><h3>Eerst begrijpen</h3><p>We bespreken je verhaal, je publiek en wat je website moet bereiken.</p></div></li>
-				<li><span>02</span><div><h3>Een duidelijk plan</h3><p>Ik vertaal ons gesprek naar een concreet voorstel met een heldere structuur, prijs en planning.</p></div></li>
-				<li><span>03</span><div><h3>Ontwerp en uitvoering</h3><p>Ik ga zelfstandig aan de slag. Op afgesproken momenten bekijken we het resultaat en verzamelen we je feedback.</p></div></li>
+				<li><span>01</span><div><h3>Comprendre d’abord</h3><p>Nous discutons de votre histoire, de votre public et de ce que le site doit accomplir.</p></div></li>
+				<li><span>02</span><div><h3>Un plan clair</h3><p>Je transforme notre échange en une proposition concrète avec une structure, un prix et un planning clairs.</p></div></li>
+				<li><span>03</span><div><h3>Design et réalisation</h3><p>Je travaille ensuite de manière autonome. Aux moments convenus, nous examinons le résultat et rassemblons vos remarques.</p></div></li>
 			</ol>
 		</section>
 		<section class=pricing id=pricing aria-labelledby=pricing-title>
 			<div class=pricing-heading>
-				<p class=eyebrow>Richtprijzen</p>
-				<h2 id=pricing-title>Duidelijk starten. Vrij blijven groeien.</h2>
-				<p>Geen vaste pakketten waarin je moet passen. Wel twee heldere voorbeelden om je budget in te schatten.</p>
+				<p class=eyebrow>Prix indicatifs</p>
+				<h2 id=pricing-title>Commencer clairement. Garder la liberté d’évoluer.</h2>
+				<p>Pas de formules rigides auxquelles vous devez vous adapter. Deux exemples clairs pour estimer votre budget.</p>
 			</div>
 			<div class=price-options>
 				<article>
-					<div><span>ÉÉN PAGINA</span><strong>± €500 <small>excl. btw</small></strong></div>
-					<h3>Sterk op één pagina.</h3>
+					<div><span>UNE PAGE</span><strong>± 500 € <small>hors TVA</small></strong></div>
+					<h3>Tout sur une page forte.</h3>
 					<ul>
-						<li>Ontwerp op maat</li>
-						<li><strong>Eén overzichtelijke scrollpagina</strong></li>
-						<li>Geschikt voor mobiel, tablet en desktop</li>
-						<li>Contactgegevens en klikbare contactknoppen</li>
-						<li><strong>Technische basis SEO</strong></li>
-						<li>Eén correctieronde</li>
-						<li>Publicatie en technische configuratie</li>
+						<li>Design sur mesure</li>
+						<li><strong>Une page claire à faire défiler</strong></li>
+						<li>Adapté au mobile, à la tablette et à l’ordinateur</li>
+						<li>Coordonnées et boutons de contact cliquables</li>
+						<li><strong>Base technique SEO</strong></li>
+						<li>Une série de retours regroupés</li>
+						<li>Publication et configuration technique</li>
 					</ul>
 				</article>
 				<article>
-					<div><span>TOT DRIE PAGINA’S</span><strong>± €750 <small>excl. btw</small></strong></div>
-					<h3>Meer ruimte voor je verhaal.</h3>
+					<div><span>JUSQU’À TROIS PAGES</span><strong>± 750 € <small>hors TVA</small></strong></div>
+					<h3>Plus d’espace pour votre histoire.</h3>
 					<ul>
-						<li>Ontwerp op maat</li>
-						<li><strong>Maximaal drie afzonderlijke pagina’s</strong></li>
-						<li>Geschikt voor mobiel, tablet en desktop</li>
-						<li>Contactgegevens en klikbare contactknoppen</li>
-						<li><strong>Eigen SEO titel en beschrijving per pagina</strong></li>
-						<li>Eén correctieronde</li>
-						<li>Publicatie en technische configuratie</li>
+						<li>Design sur mesure</li>
+						<li><strong>Jusqu’à trois pages distinctes</strong></li>
+						<li>Adapté au mobile, à la tablette et à l’ordinateur</li>
+						<li>Coordonnées et boutons de contact cliquables</li>
+						<li><strong>Un titre et une description SEO propres à chaque page</strong></li>
+						<li>Une série de retours regroupés</li>
+						<li>Publication et configuration technique</li>
 					</ul>
 				</article>
-				<p class=price-note>Teksten en beelden worden aangeleverd door de klant. Webshops, meertaligheid en bijzondere functies zijn niet inbegrepen en worden vooraf apart besproken.</p>
+				<p class=price-note>Les textes et les images sont fournis par le client. Les boutiques en ligne, le multilinguisme et les fonctions particulières ne sont pas inclus et sont discutés séparément au préalable.</p>
 			</div>
-			<p class=pricing-context>Dit zijn richtprijzen, geen vaste pakketten. Eén bijzondere pagina met veel maatwerk, animatie of specifieke functies kan meer werk vragen dan drie eenvoudige pagina’s. Je krijgt altijd vooraf een duidelijke prijs.</p>
+			<p class=pricing-context>Il s’agit de prix indicatifs, pas de formules fixes. Une page très personnalisée avec des animations ou des fonctions spécifiques peut demander plus de travail que trois pages simples. Vous recevez toujours un prix clair à l’avance.</p>
 		</section>
 		<section class=ownership id=ownership aria-labelledby=ownership-title>
 			<div>
-				<p class=eyebrow>Eerlijk eigenaarschap</p>
-				<h2 id=ownership-title>Je koopt je website. Je huurt ze niet.</h2>
+				<p class=eyebrow>Une propriété honnête</p>
+				<h2 id=ownership-title>Vous achetez votre site. Vous ne le louez pas.</h2>
 			</div>
 			<div class=ownership-copy>
-				<p>De website die ik voor je maak, is van jou. Geen verplicht onderhoudsabonnement en geen maandelijkse rekening om je eigen website online te houden.</p>
+				<p>Le site que je crée pour vous vous appartient. Aucun abonnement de maintenance obligatoire et aucune facture mensuelle simplement pour garder votre propre site en ligne.</p>
 				<ul>
-					<li><span>ZELF DOEN</span><p>Pas bestaande teksten, foto's, prijzen, menu's en andere inhoud eenvoudig zelf aan.</p></li>
-					<li><span>LATEN GROEIEN</span><p>Wil je later een nieuwe pagina, link of functie? Dan krijg je vooraf een duidelijk voorstel.</p></li>
-					<li><span>WEL JAARLIJKS</span><p>Je domeinnaam blijft je enige vaste kost, tenzij je zelf voor een extra betaalde dienst kiest.</p></li>
+					<li><span>MODIFIER</span><p>Modifiez facilement vous-même les textes, photos, prix, menus et autres contenus existants.</p></li>
+					<li><span>FAIRE ÉVOLUER</span><p>Besoin d’une nouvelle page, d’un lien ou d’une fonction plus tard ? Vous recevez une proposition claire à l’avance.</p></li>
+					<li><span>COÛT ANNUEL</span><p>Votre nom de domaine reste votre seul coût fixe, sauf si vous choisissez un service payant supplémentaire.</p></li>
 				</ul>
 			</div>
 		</section>
 		<section class=faq id=faq aria-labelledby=faq-title>
 			<div class=faq-heading>
-				<p class=eyebrow>Veelgestelde vragen</p>
-				<h2 id=faq-title>Een website laten maken zonder vraagtekens.</h2>
+				<p class=eyebrow>Questions fréquentes</p>
+				<h2 id=faq-title>Créer un site sans points d’interrogation.</h2>
 			</div>
 			<div class=faq-list>
-				<details><summary>Wat kost een website ongeveer?</summary><p>Een eenvoudige website op één pagina kost doorgaans ongeveer €500 exclusief btw. Voor een eenvoudige website met maximaal drie pagina’s kun je rekenen op ongeveer €750 exclusief btw. Dit zijn richtprijzen. Maatwerk, animatie en specifieke functies bepalen mee hoeveel werk nodig is.</p></details>
-				<details><summary>Is de website echt van mij?</summary><p>Ja. Je koopt je website en huurt ze niet. Er is geen verplicht onderhoudsabonnement. Je domeinnaam blijft de voornaamste vaste jaarlijkse kost, tenzij je zelf extra betaalde diensten kiest.</p></details>
-				<details><summary>Kan ik mijn website zelf aanpassen?</summary><p>Ja. Bestaande teksten, foto’s, prijzen en andere inhoud kun je eenvoudig zelf aanpassen. Voor nieuwe pagina’s of functies bekijken we samen een duidelijke uitbreiding.</p></details>
-				<details><summary>Werk je alleen voor klanten uit Gistel?</summary><p>Nee. Ik werk vanuit Gistel voor zelfstandigen, verenigingen en projecten in de omgeving en daarbuiten. Veel kan eenvoudig op afstand besproken worden.</p></details>
+				<details><summary>Combien coûte environ un site web ?</summary><p>Un site web simple d’une page coûte généralement environ 500 € hors TVA. Pour un site simple comprenant jusqu’à trois pages, comptez environ 750 € hors TVA. Il s’agit de prix indicatifs. Le sur-mesure, les animations et les fonctions spécifiques influencent la quantité de travail nécessaire.</p></details>
+				<details><summary>Le site web m’appartient-il vraiment ?</summary><p>Oui. Vous achetez votre site, vous ne le louez pas. Aucun abonnement de maintenance n’est imposé. Votre nom de domaine reste le principal coût annuel fixe, sauf si vous choisissez des services payants supplémentaires.</p></details>
+				<details><summary>Puis-je modifier mon site moi-même ?</summary><p>Oui. Vous pouvez facilement modifier les textes, photos, prix et autres contenus existants. Pour de nouvelles pages ou fonctions, nous définissons ensemble une extension claire.</p></details>
+				<details><summary>Travaillez-vous uniquement avec des clients de Gistel ?</summary><p>Non. Depuis Gistel, je travaille avec des indépendants, associations et projets dans les environs et au-delà. Une grande partie du processus peut facilement se dérouler à distance.</p></details>
 			</div>
 		</section>
 		<section class=about id=about aria-labelledby=about-title>
 			<div class=about-marker aria-hidden=true>
 				<span>11</span>
-				<small>JAAR OUD<br />WAAR HET BEGON</small>
+				<small>ANS<br />LÀ OÙ TOUT A COMMENCÉ</small>
 			</div>
 			<div class=about-copy>
-				<p class=eyebrow>Over Tommy</p>
-				<h2 id=about-title>Oude nieuwsgierigheid. Nieuwe goesting.</h2>
-				<p>Toen ik elf was, installeerde ik al computers met Windows 98 en experimenteerde ik met mijn eerste websites. Een twintigtal jaar geleden bouwde ik mijn eerste echte sites.</p>
-				<p>Daarna bleef technologie altijd deel van mijn leven en werk, maar webdesign stond niet voortdurend centraal. De voorbije jaren begon het opnieuw te kriebelen. Dit jaar besloot ik er echt werk van te maken, met frisse ideeën en moderne hulpmiddelen.</p>
-				<p>Naast Bits by Tommy werk ik voltijds als service engineer in telecom. Thuis ben ik vooral partner en papa. En als er nog wat avond overblijft, zeg ik zelden nee tegen een goeie gamesessie.</p>
-				<p class=about-signoff>Ik wil iets maken waar we allebei trots op zijn. Persoonlijk, begrijpelijk en zonder onnodige kosten.</p>
+				<p class=eyebrow>À propos de Tommy</p>
+				<h2 id=about-title>Une ancienne curiosité. Un nouvel enthousiasme.</h2>
+				<p>À onze ans, j’installais déjà des ordinateurs sous Windows 98 et j’expérimentais avec mes premiers sites web. J’ai créé mes premiers véritables sites il y a une vingtaine d’années.</p>
+				<p>La technologie est ensuite toujours restée présente dans ma vie et mon travail, même si le webdesign n’a pas toujours été au centre. Ces dernières années, l’envie est revenue. Cette année, j’ai décidé de m’y consacrer sérieusement, avec des idées fraîches et des outils modernes.</p>
+				<p>En parallèle de Bits by Tommy, je travaille à temps plein comme technicien de service dans les télécoms. À la maison, je suis avant tout compagnon et papa. Et lorsqu’il reste une soirée, je refuse rarement une bonne session de jeu.</p>
+				<p class=about-signoff>Je veux créer quelque chose dont nous pouvons être fiers tous les deux. Personnel, compréhensible et sans coûts inutiles.</p>
 			</div>
 		</section>
 	</main>
 		<footer id=contact>
-			<div><small>WEBDESIGN IN GISTEL & OMGEVING</small><p>Heb je iets in gedachten?</p></div>
+			<div><small>CRÉATION DE SITES À GISTEL ET ENVIRONS</small><p>Vous avez une idée en tête ?</p></div>
 			<div class=contact-action>
-				<span>Vertel het gerust, ook als je nog niet helemaal zeker bent.</span>
+				<span>Parlez-m’en, même si votre idée n’est pas encore complètement définie.</span>
 				<div class=contact-links>
 					<a href=mailto:vercruyssetommy@telenet.be>vercruyssetommy@telenet.be ↗</a>
 					<a href=tel:+32493767863>0493 76 78 63 ↗</a>
 				</div>
 			</div>
 		</footer>
-		<a class=to-top href=#top aria-label='Terug naar boven'>↑</a>
+		<a class=to-top href=#top aria-label='Retour en haut'>↑</a>
 	</body>
 </html>
 
